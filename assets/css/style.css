@@ -23,7 +23,6 @@ html {
 
 .modal-body {
   text-align: center;
-  color: rgb(90, 0, 0);
   width: 100%;
 }
 
@@ -87,7 +86,7 @@ html {
   padding: 10px;
   position: absolute;
   border-radius: 15px;
-  background: rgb(5, 253, 79);
+  background: #808080;
   backface-visibility: hidden;
 }
 
@@ -110,8 +109,8 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  color: rgb(139, 2, 2);
-  font-size: 36px;
+
+  font-size: 16px;
 }
 
 .moves,
@@ -120,11 +119,11 @@ html {
   display: flex;
   position: relative;
   width: 100%;
-  color: rgb(139, 2, 2);
+
   text-align: center;
   padding-bottom: 10px;
   font-family: "Indie Flower", sans-serif;
-  font-size: 36px;
+  font-size: 16px;
 }
 
 .restart {
@@ -133,8 +132,8 @@ html {
   height: fit-content;
   margin-top: 5px;
   font-family: "Indie Flower", sans-serif;
-  color: rgb(139, 2, 2);
-  font-size: 20px;
+ 
+  font-size: 16px;
   width: 100%;
 }
 

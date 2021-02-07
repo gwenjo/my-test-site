@@ -32,85 +32,80 @@
 
   <body>
     <!-----------------Code taken from Bootsrap--------------->
-<hr>
-<br>
 <br />
-    <div class="container">
-      <div class="row">
-
-        <p><button type="button">instruction</button></p>
-
-        
-
-        <a href="index.html"><button>HOME</button></a>
-      </div>
+<br />
+<div class="container">
+    <div class="row">
+        <p><button type="button">INSTRUCTION</button></p>
     </div>
+</div>
    
+<!-------SCORE BOARD code taken from fellow student https://github.com/karzuin/MS2/blob/master/index.html----->
+<div class="scoreboard">
+    <div class="moves">0</div>
+    <div class="timer">00:00</div>
+    <button type="button" class="restart" onclick="startGame()">Restart</button>
+</div>
 
-    <!--Code taken from here https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae-->
-    <div class="container">
-      <section class="memory-game">
+<!--Code taken from here https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae-->
+<div class="container">
+    <section class="memory-game">
         <div class="memory-card" data-framework="alpaca">
-        <img class="front-face" src="assets/images/alpaca.jpg" alt="Alpaca" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
-    <div class="memory-card" data-framework="alpaca">
-        <img class="front-face" src="assets/images/alpaca.jpg" alt="Alpaca" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
+            <img class="front-face" src="assets/images/alpaca.jpg" alt="Alpaca" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
+        <div class="memory-card" data-framework="alpaca">
+            <img class="front-face" src="assets/images/alpaca.jpg" alt="Alpaca" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
 
-    <div class="memory-card" data-framework="fox">
-        <img class="front-face" src="assets/images/fox.jpg/" alt="Fox" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
-    <div class="memory-card" data-framework="fox">
-        <img class="front-face" src="assets/images/fox.jpg/" alt="Fox" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
+        <div class="memory-card" data-framework="fox">
+            <img class="front-face" src="assets/images/fox.jpg" alt="Fox" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
+        <div class="memory-card" data-framework="fox">
+            <img class="front-face" src="assets/images/fox.jpg" alt="Fox" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
 
-    <div class="memory-card" data-framework="giraffe">
-        <img class="front-face" src="assets/images/giraffe.jpg" alt="Giraffe" />
-        <img class="back-face" src="assets/images/giraffe.jpg" alt="Feather" />
-    </div>
-    <div class="memory-card" data-framework="giraffe">
-        <img class="front-face" src="assets/images/giraffe.jpg" alt="Giraffe" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
+        <div class="memory-card" data-framework="giraffe">
+            <img class="front-face" src="assets/images/giraffe.jpg" alt="Giraffe" />
+            <img class="back-face" src="assets/images/giraffe.jpg" alt="Feather" />
+        </div>
+        <div class="memory-card" data-framework="giraffe">
+            <img class="front-face" src="assets/images/giraffe.jpg" alt="Giraffe" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
     
-    <div class="memory-card" data-framework="koala">
-        <img class="front-face" src="assets/images/koala.jpg" alt="Koala" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
-    <div class="memory-card" data-framework="koala">
-        <img class="front-face" src="assets/images/koala.jpg" alt="Koala" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
+        <div class="memory-card" data-framework="koala">
+            <img class="front-face" src="assets/images/koala.jpg" alt="Koala" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
+        <div class="memory-card" data-framework="koala">
+            <img class="front-face" src="assets/images/koala.jpg" alt="Koala" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
 
-    <div class="memory-card" data-framework="leopard">
-        <img class="front-face" src="assets/images/leopard.jpg" alt="Leopard" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
-    <div class="memory-card" data-framework="leopard">
-        <img class="front-face" src="assets/images/leopard.jpg" alt="Leopard" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
+        <div class="memory-card" data-framework="leopard">
+            <img class="front-face" src="assets/images/leopard.jpg" alt="Leopard" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
+        <div class="memory-card" data-framework="leopard">
+            <img class="front-face" src="assets/images/leopard.jpg" alt="Leopard" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
 
-    <div class="memory-card" data-framework="panda">
-        <img class="front-face" src="assets/images/panda.jpg" alt="Panda" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
-    <div class="memory-card" data-framework="panda">
-        <img class="front-face" src="assets/images/panda.jpg" alt="Panda" />
-        <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
-    </div>
-      </section>
-    </div>
- <!-------SCORE BOARD code taken from fellow student https://github.com/karzuin/MS2/blob/master/index.html----->
-    <div class="scoreboard">
-        <div class="moves">0</div>
-        <div class="timer">00:00</div>
-        <button type="button" class="restart" onclick="startGame()">Restart</button>
-    </div>
+        <div class="memory-card" data-framework="panda">
+            <img class="front-face" src="assets/images/panda.jpg" alt="Panda" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
+        <div class="memory-card" data-framework="panda">
+            <img class="front-face" src="assets/images/panda.jpg" alt="Panda" />
+            <img class="back-face" src="assets/images/feather.jpg" alt="Feather" />
+        </div>
+    </section>
+</div>
+ 
     <!-----------Footer-------------->
 
     <p class="text">Gwendolyn Jo 2021</p>

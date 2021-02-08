@@ -1,45 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    />
-    <script
-      src="https://kit.fontawesome.com/f07371f622.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://csshake.surge.sh/csshake.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"
-    />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+<script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
 
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
-    <!----------------------------Title------------------->
+<title>| Memory Game |</title>
+</head>
 
-    <title>Memory Game</title>
-  </head>
+<body>
+<!-- Dropdown Section -->
 
-  <body>
-    <!-----------------Code taken from Bootsrap--------------->
+<!-- /.Dropdown Section -->
+
+<!-- instruction Section -->
 <br />
 <br />
 <div class="container">
     <div class="row">
-        <p><button type="button">INSTRUCTION</button></p>
+        <p><button type="button" class="btn btn-primary"
+        data-toggle="modal" data-target="#exampleModal">INSTRUCTION</button></p>
     </div>
 </div>
-   
+<!-- /.Instruction Section -->
+
+<!-- Modal Section -->
+<!-- For the button "Introduction" I used the "modal" code of bootstrap, I changed this to a only "Introduction" pop-up. 
+        https://getbootstrap.com/docs/4.5/components/modal/ -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header text-center">
+                <h3 class="modal-title" id="exampleModalLabel">INSTRUCTIONS</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span></button>
+            </div>
+            <div class="modal-body">
+                Instruction Details! 
+                Good Luck!
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.Modal Section -->
+
 <!-------SCORE BOARD code taken from fellow student https://github.com/karzuin/MS2/blob/master/index.html----->
 <div class="scoreboard">
     <div class="moves">0</div>
@@ -106,12 +121,12 @@
     </section>
 </div>
  
-    <!-----------Footer-------------->
+<!-----------Footer-------------->
 
-    <p class="text">Gwendolyn Jo 2021</p>
+<p class="text">Gwendolyn Jo 2021</p>
 
-    <script src="assets/js/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  </body>
+<script src="assets/js/scripts.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
 </html>

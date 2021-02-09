@@ -17,16 +17,23 @@
 
 <body>
 <!-- Dropdown Section -->
-
-<!-- /.Dropdown Section -->
+    <div class="dropdown">
+        <button class="dropbtn">LEVELS<i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="index.html">EASY</a>
+                <a href="med.html">MED</a>
+                <a href="hard.html">HARD</a>
+            </div>
+    </div> 
+<!-- /.Dropdown Section-->
 
 <!-- instruction Section -->
 <br />
 <br />
 <div class="container">
     <div class="row">
-        <p><button type="button" class="btn btn-primary"
-        data-toggle="modal" data-target="#exampleModal">INSTRUCTION</button></p>
+        <p><button type="button" class="btn btn-dark"
+        data-toggle="modal" data-target="#instructionModal">INSTRUCTION</button></p>
     </div>
 </div>
 <!-- /.Instruction Section -->
@@ -34,7 +41,7 @@
 <!-- Modal Section -->
 <!-- For the button "Introduction" I used the "modal" code of bootstrap, I changed this to a only "Introduction" pop-up. 
         https://getbootstrap.com/docs/4.5/components/modal/ -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+<div class="modal fade" id="instructionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -59,7 +66,7 @@
 <div class="scoreboard">
     <div class="moves">0</div>
     <div class="timer">00:00</div>
-    <button type="button" class="restart" onclick="startGame()">Restart</button>
+    <button type="button" class="restart btn btn-dark" onclick="startGame()">Restart</button>
 </div>
 
 <!--Code taken from here https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae-->

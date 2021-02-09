@@ -8,8 +8,7 @@
   box-sizing: border-box;
 }
 
-body,
-html {
+body, html {
   height: 100%;
   width: 100%;
   margin: 0;
@@ -17,6 +16,54 @@ html {
   padding: 0;
   font-size: 16px;
   background-color: #a9a9a9;
+}
+
+/*------------------Dropdown------------------------*/
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: grey;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 93px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
 /*------modal-------*/
@@ -129,11 +176,9 @@ html {
 
 .restart {
   border: none;
-  background-color: white;
   height: fit-content;
   margin-top: 5px;
   font-family: "Yusei Magic", sans-serif;
- 
   font-size: 16px;
   width: 100%;
 }

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
-<script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
+
 <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -15,27 +15,31 @@
 
 <title>| Memory Game |</title>
 </head>
+<header>
+<!-- Navbar Section -->
+<a class="navbar-brand"></a>
+    <nav class="navbar menu navbar-expand-sm navbar-light"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" 
+            aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">EASY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="med.html">MED</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="hard.html">HARD</a>
+                        </li>
+                    </ul>
+                </div>     
+    </nav>
+<!-- /.Navbar Section-->
+</header>
+
 
 <body>
-  
-<!-- Dropdown Section -->
-<div class="navbar">
-  <a href="#home">Home</a>
-  <a href="#news">News</a>
-  <div class="dropdown">
-    <button class="dropbtn">Dropdown 
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="index.html">EASY</a>
-      <a href="med.html">MED</a>
-      <a href="hard.html">HARD</a>
-    </div>
-  </div> 
-</div>
-
-<!-- /.Dropdown Section-->
-
 <!-- instruction Section -->
 <div class="container">
     <div class="row">
@@ -58,10 +62,10 @@
                     <span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                Click on "START" to start the game. <br />
-                Remember the locations of the cards and make pairs of 2 of the same cards by turning 
-                them over. You can increase the number of cards and the difficulty in the drop-down 
-                list in the top left corner. <br >
+                You can start by turning the cards over. <br />
+                Remember the locations of the cards and make pairs of 2 of the same cards
+                You can increase the number of cards and the difficulty in the top left corner. <br >
+                By choosing EASY, MED and HARD. <br />
                 Good Luck!
             </div>
             <div class="modal-footer">
@@ -75,12 +79,12 @@
 <!-------SCORE BOARD code taken from fellow student https://github.com/karzuin/MS2/blob/master/index.html----->
 <div class="scoreboard">
     <div class="moves">0</div>
-    <button type="button" class="restart btn btn-dark btn-sm" onclick="startGame()">Restart</button>
+    <button type="button" class="restart btn btn-dark btn-sm" onclick="startGame()">RESET</button>
     <div class="timer">00:00</div>
     
 </div>
 
-<!--Code taken from here https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae-->
+<!--Code taken from here -->
 <div class="container">
     <section class="memory-game">
         <div class="memory-card" data-framework="alpaca">
@@ -143,6 +147,7 @@
 <p class="text">Gwendolyn Jo 2021</p>
 
 <script src="assets/js/scripts.js"></script>
+<script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </body>

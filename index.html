@@ -9,8 +9,8 @@
 <script src="https://kit.fontawesome.com/f07371f622.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
-
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
 
 <title>| Memory Game |</title>
@@ -19,20 +19,24 @@
 <body>
   
 <!-- Dropdown Section -->
-    <div class="dropdown">
-        <button class="dropbtn">LEVELS<i class="fa fa-caret-down"></i></button>
-            <div class="dropdown-content">
-                <a href="index.html">EASY</a>
-                <a href="med.html">MED</a>
-                <a href="hard.html">HARD</a>
-            </div>
-    </div> 
+<div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#news">News</a>
+  <div class="dropdown">
+    <button class="dropbtn">Dropdown 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="index.html">EASY</a>
+      <a href="med.html">MED</a>
+      <a href="hard.html">HARD</a>
+    </div>
+  </div> 
+</div>
+
 <!-- /.Dropdown Section-->
 
 <!-- instruction Section -->
-
-<br />
-<br />
 <div class="container">
     <div class="row">
         <p><button type="button" class="btn btn-dark btn-sm"
@@ -54,7 +58,10 @@
                     <span aria-hidden="true">&times;</span></button>
             </div>
             <div class="modal-body">
-                Instruction Details! 
+                Click on "START" to start the game. <br />
+                Remember the locations of the cards and make pairs of 2 of the same cards by turning 
+                them over. You can increase the number of cards and the difficulty in the drop-down 
+                list in the top left corner. <br >
                 Good Luck!
             </div>
             <div class="modal-footer">
@@ -68,8 +75,9 @@
 <!-------SCORE BOARD code taken from fellow student https://github.com/karzuin/MS2/blob/master/index.html----->
 <div class="scoreboard">
     <div class="moves">0</div>
-    <div class="timer">00:00</div>
     <button type="button" class="restart btn btn-dark btn-sm" onclick="startGame()">Restart</button>
+    <div class="timer">00:00</div>
+    
 </div>
 
 <!--Code taken from here https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae-->
@@ -132,7 +140,6 @@
 </div>
  
 <!-----------Footer-------------->
-
 <p class="text">Gwendolyn Jo 2021</p>
 
 <script src="assets/js/scripts.js"></script>

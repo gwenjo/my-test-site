@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap");
 
-/* styles.css code taken from https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae and modified */
+/* styles.css code used and modified from https://medium.com/free-code-camp/vanilla-javascript-tutorial-build-a-memory-game-in-30-minutes-e542c4447eae and modified */
 
 * {
   padding: 0;
@@ -8,8 +8,8 @@
   box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
+body {
+  height: 80%;
   width: 100%;
   margin: 0;
   font-family: 'Yusei Magic', sans-serif;
@@ -19,9 +19,22 @@ body, html {
 }
 
 /*------------------Dropdown------------------------*/
+.navbar {
+  overflow: hidden;
+  background-color:transparent;
+}
+
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 .dropdown {
-  float: left;
+  float: right;
   overflow: hidden;
 }
 
@@ -29,7 +42,7 @@ body, html {
   font-size: 16px;  
   border: none;
   outline: none;
-  color: black;
+  color: white;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit;
@@ -37,14 +50,14 @@ body, html {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: grey;
+  background-color:grey;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 93px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -55,7 +68,7 @@ body, html {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
-  text-align: left;
+  text-align: right;
 }
 
 .dropdown-content a:hover {
@@ -65,7 +78,6 @@ body, html {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 /*------modal-------*/
 
 

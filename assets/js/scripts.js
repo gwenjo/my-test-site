@@ -1,7 +1,7 @@
 //Code taken from fellow Student https://github.com/karzuin/MS2/blob/master/assets/js/main.js
 
-let firstguess = "";
-let secondguess = "";
+let firstTry = "";
+let secondTry = "";
 let count = 0; //stores the count
 let previousTarget = null;
 let delay = 1500;
@@ -110,13 +110,13 @@ let startGame = function myFunction() {
 };
 
 if (count < 2) {
-  count++;
-  moveCounter();
-  if (count === 1) {
-    firstGuess = clicked.parentNode.dataset.name;
-    clicked.parentNode.classList.add("selected");
-  } else {
-    secondGuess = clicked.parentNode.dataset.name;
-    clicked.parentNode.classList.add("selected");
-  }
-}
+    count++;
+    moveCounter();
+    if (count === 1) {
+        firstTry = clicked.parentNode.dataset.name;
+        clicked.parentNode.classList.add("selected");
+    } else {
+        secondTry = clicked.parentNode.dataset.name;
+        clicked.parentNode.classList.add("selected");
+        }
+    }
